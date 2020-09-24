@@ -288,8 +288,9 @@ footskip=1.75cm% 页脚 1.8cm %
 \fancypagestyle{XMU@headings}{%
   \fancyhf{}
   \fancyfoot[C]{\songti\zihao{5} \thepage}
-  \fancyhead[C]{\ifXMU@doctor\zihao{5}{\songti 厦门大学博士学位论文}
-                \else\zihao{5}{\songti 厦门大学硕士学位论文}\fi}
+  \fancyhead[CE]{\zihao{5} \songti \leftmark}
+  \fancyhead[CO]{\ifXMU@doctor\zihao{5}{\songti {\XMU@value@title}}
+                \else\zihao{5}{\songti {\XMU@value@title}}\fi}
   }
 
 %==================================对于openright 选项，必须保证章页右开，且如果前章末页内容须清空其页眉页脚。===================
